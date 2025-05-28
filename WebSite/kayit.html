@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - Global Mobilite Expo 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Global Mobilite Expo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="katilimcilar.html">Katılımcılar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biletler.html">Biletler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary active" href="kayit.html">Kayıt Ol</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Kayıt Header -->
+    <section class="page-header py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center">Kayıt Ol</h1>
+            <p class="lead text-center">Global Mobilite Expo 2024'e katılmak için hemen kayıt olun</p>
+        </div>
+    </section>
+
+    <!-- Kayıt Formu -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="registration-form">
+                        <form id="registrationForm">
+                            <!-- Kişisel Bilgiler -->
+                            <div class="form-section mb-4">
+                                <h3 class="mb-4">Kişisel Bilgiler</h3>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="firstName" class="form-label">Adınız</label>
+                                            <input type="text" class="form-control" id="firstName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="lastName" class="form-label">Soyadınız</label>
+                                            <input type="text" class="form-control" id="lastName" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">E-posta Adresiniz</label>
+                                            <input type="email" class="form-control" id="email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">Telefon Numaranız</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="company" class="form-label">Şirket Adı</label>
+                                            <input type="text" class="form-control" id="company" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="position" class="form-label">Pozisyonunuz</label>
+                                            <input type="text" class="form-control" id="position" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Katılım Detayları -->
+                            <div class="form-section mb-4">
+                                <h3 class="mb-4">Katılım Detayları</h3>
+                                <div class="row g-3">
+                                    <div class="mb-3">
+                                        <label for="ticketType" class="form-label">Bilet Türü <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="ticketType" name="ticketType" required>
+                                            <option value="">Seçiniz</option>
+                                            <option value="adult">Yetişkin Bilet (₺250)</option>
+                                            <option value="student">Öğrenci Bilet (₺150)</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="visitDate" class="form-label">Ziyaret Tarihi <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="visitDate" name="visitDate" required>
+                                            <option value="">Seçiniz</option>
+                                            <optgroup label="İstanbul">
+                                                <option value="istanbul-15">15 Mart 2024</option>
+                                                <option value="istanbul-16">16 Mart 2024</option>
+                                                <option value="istanbul-17">17 Mart 2024</option>
+                                            </optgroup>
+                                            <optgroup label="Ankara">
+                                                <option value="ankara-22">22 Mart 2024</option>
+                                                <option value="ankara-23">23 Mart 2024</option>
+                                                <option value="ankara-24">24 Mart 2024</option>
+                                            </optgroup>
+                                            <optgroup label="İzmir">
+                                                <option value="izmir-29">29 Mart 2024</option>
+                                                <option value="izmir-30">30 Mart 2024</option>
+                                                <option value="izmir-31">31 Mart 2024</option>
+                                            </optgroup>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="location" class="form-label">Fuar Lokasyonu <span class="text-danger">*</span></label>
+                                        <select class="form-select" id="location" name="location" required>
+                                            <option value="">Seçiniz</option>
+                                            <option value="istanbul">İstanbul Fuar Merkezi</option>
+                                            <option value="ankara">Ankara Fuar Merkezi</option>
+                                            <option value="izmir">İzmir Fuar Alanı</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group">
+                                            <label for="interests" class="form-label">İlgi Alanlarınız</label>
+                                            <div class="row g-2">
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="interest1" value="elektrikli">
+                                                        <label class="form-check-label" for="interest1">
+                                                            Elektrikli Araçlar
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="interest2" value="otonom">
+                                                        <label class="form-check-label" for="interest2">
+                                                            Otonom Araçlar
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="interest3" value="surdurulebilir">
+                                                        <label class="form-check-label" for="interest3">
+                                                            Sürdürülebilir Mobilite
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="interest4" value="teknoloji">
+                                                        <label class="form-check-label" for="interest4">
+                                                            Mobilite Teknolojileri
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="interest5" value="enerji">
+                                                        <label class="form-check-label" for="interest5">
+                                                            Enerji Çözümleri
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="interest6" value="diger">
+                                                        <label class="form-check-label" for="interest6">
+                                                            Diğer
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Özel İstekler -->
+                            <div class="form-section mb-4">
+                                <h3 class="mb-4">Özel İstekler</h3>
+                                <div class="form-group">
+                                    <label for="specialRequests" class="form-label">Özel İstekleriniz veya Notlarınız</label>
+                                    <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- KVKK Onayı -->
+                            <div class="form-section mb-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="kvkk" required>
+                                    <label class="form-check-label" for="kvkk">
+                                        Kişisel verilerimin işlenmesine ilişkin <a href="#" data-bs-toggle="modal" data-bs-target="#kvkkModal">KVKK Aydınlatma Metni</a>'ni okudum ve onaylıyorum.
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Gönder Butonu -->
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Kayıt Ol</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KVKK Modal -->
+    <div class="modal fade" id="kvkkModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">KVKK Aydınlatma Metni</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, Global Mobilite Expo olarak kişisel verilerinizin işlenmesi, saklanması ve aktarılması konusunda sizleri bilgilendirmek isteriz.</p>
+                    
+                    <h6 class="mt-4">Veri Sorumlusu</h6>
+                    <p>Global Mobilite Expo, kişisel verilerinizin veri sorumlusu olarak, bu verilerin işlenmesi, saklanması ve aktarılması konusunda gerekli önlemleri almaktadır.</p>
+                    
+                    <h6 class="mt-4">Kişisel Verilerin İşlenme Amacı</h6>
+                    <p>Kişisel verileriniz, etkinliğimize katılımınızın sağlanması, etkinlik organizasyonu, iletişim faaliyetleri ve yasal yükümlülüklerimizin yerine getirilmesi amacıyla işlenmektedir.</p>
+                    
+                    <h6 class="mt-4">Kişisel Verilerin Aktarılması</h6>
+                    <p>Kişisel verileriniz, yasal yükümlülüklerimiz kapsamında yetkili kamu kurum ve kuruluşlarına ve hizmet aldığımız iş ortaklarımıza aktarılabilecektir.</p>
+                    
+                    <h6 class="mt-4">Haklarınız</h6>
+                    <p>KVKK'nın 11. maddesi kapsamında, kişisel verilerinizle ilgili olarak aşağıdaki haklara sahipsiniz:</p>
+                    <ul>
+                        <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+                        <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
+                        <li>Kişisel verilerinizin işlenme amacını ve bunların amacına uygun kullanılıp kullanılmadığını öğrenme</li>
+                        <li>Yurt içinde veya yurt dışında kişisel verilerinizin aktarıldığı üçüncü kişileri bilme</li>
+                        <li>Kişisel verilerinizin eksik veya yanlış işlenmiş olması hâlinde bunların düzeltilmesini isteme</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Global Mobilite Expo</h5>
+                    <p>Geleceğin mobilite çözümleri için buluşma noktası</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Global Mobilite Expo. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+        createChat({
+            webhookUrl: 'https://hanbayraktar.app.n8n.cloud/webhook/6469a369-d758-4c8d-86d9-d793452f2ffd/chat',
+            initialMessages: [
+            'Merhabalar! 👋',
+            'Ben akıllı asistanınız, size nasıl yardımcı olabilirim?'
+        ],
+        i18n: {
+            en: {
+                title: 'Global Mobilite Expo 2024e hoş geldiniz! ',
+                subtitle: "Konuşmayı başlatabilirsiniz.",
+                footer: '',
+                getStarted: 'Yeni Sohbet',
+                inputPlaceholder: 'Sorunuzu yazınız...',
+            },
+        },
+        });
+    </script>
+</body>
+</html> 

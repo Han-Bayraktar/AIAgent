@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Global Mobilite Expo 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Global Mobilite Expo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Ana Sayfa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hakkimizda.html">Hakkımızda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="katilimcilar.html">Katılımcılar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="program.html">Program</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="biletler.html">Biletler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="iletisim.html">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary" href="kayit.html">Kayıt Ol</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- İletişim Header -->
+    <section class="page-header py-5 mt-5">
+        <div class="container">
+            <h1 class="text-center">İletişim</h1>
+            <p class="lead text-center">Bizimle iletişime geçin</p>
+        </div>
+    </section>
+
+    <!-- İletişim Bilgileri -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- İletişim Formu -->
+                <div class="col-lg-8">
+                    <div class="contact-form">
+                        <h3 class="mb-4">Bize Ulaşın</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="name" class="form-label">Adınız Soyadınız</label>
+                                        <input type="text" class="form-control" id="name" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="email" class="form-label">E-posta Adresiniz</label>
+                                        <input type="email" class="form-control" id="email" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="phone" class="form-label">Telefon Numaranız</label>
+                                        <input type="tel" class="form-control" id="phone">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="subject" class="form-label">Konu</label>
+                                        <select class="form-select" id="subject" required>
+                                            <option value="">Seçiniz</option>
+                                            <option value="genel">Genel Bilgi</option>
+                                            <option value="katilim">Katılım</option>
+                                            <option value="bilet">Bilet</option>
+                                            <option value="sponsorluk">Sponsorluk</option>
+                                            <option value="diger">Diğer</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <label for="message" class="form-label">Mesajınız</label>
+                                        <textarea class="form-control" id="message" rows="5" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Gönder</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- İletişim Bilgileri -->
+                <div class="col-lg-4">
+                    <div class="contact-info">
+                        <h3 class="mb-4">İletişim Bilgileri</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-4">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                <div>
+                                    <h5>Adres</h5>
+                                    <p>Fuar Merkezi, İstanbul<br>Türkiye</p>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <i class="fas fa-phone text-primary me-2"></i>
+                                <div>
+                                    <h5>Telefon</h5>
+                                    <p>+90 (212) XXX XX XX</p>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <i class="fas fa-envelope text-primary me-2"></i>
+                                <div>
+                                    <h5>E-posta</h5>
+                                    <p>info@globalmobiliteexpo.com</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-clock text-primary me-2"></i>
+                                <div>
+                                    <h5>Çalışma Saatleri</h5>
+                                    <p>Pazartesi - Cuma: 09:00 - 18:00</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="social-links mt-4">
+                            <h5>Sosyal Medya</h5>
+                            <div class="d-flex gap-3">
+                                <a href="#" class="text-primary"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-twitter fa-lg"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-linkedin-in fa-lg"></i></a>
+                                <a href="#" class="text-primary"><i class="fab fa-instagram fa-lg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Harita -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="map-container">
+                        <h3 class="text-center mb-4">Konum</h3>
+                        <div class="ratio ratio-21x9">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.27184481!2d28.8133!3d41.0082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDAwJzI5LjUiTiAyOMKwNDgnNDcuOSJF!5e0!3m2!1str!2str!4v1234567890!5m2!1str!2str" 
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Global Mobilite Expo</h5>
+                    <p>Geleceğin mobilite çözümleri için buluşma noktası</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Global Mobilite Expo. Tüm hakları saklıdır.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+    <script type="module">
+        import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+    
+        createChat({
+            webhookUrl: 'https://hanbayraktar.app.n8n.cloud/webhook/6469a369-d758-4c8d-86d9-d793452f2ffd/chat',
+            initialMessages: [
+            'Merhabalar! 👋',
+            'Ben akıllı asistanınız, size nasıl yardımcı olabilirim?'
+        ],
+        i18n: {
+            en: {
+                title: 'Global Mobilite Expo 2024e hoş geldiniz! ',
+                subtitle: "Konuşmayı başlatabilirsiniz.",
+                footer: '',
+                getStarted: 'Yeni Sohbet',
+                inputPlaceholder: 'Sorunuzu yazınız...',
+            },
+        },
+        });
+    </script>
+</body>
+</html> 
